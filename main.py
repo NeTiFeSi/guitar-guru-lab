@@ -16,7 +16,7 @@ async def create_exercise():
             'number_of_time_divisions': choice(range(1, 3)),  # 5
             'finger_sequence': '-'.join(str(i) for i in finger_sequence),
             'start_house': start_house,
-            'direction': choice(['up', 'down']),
+            'string': choice(['e', 'B', 'G', 'D', 'A', 'E']),
             'final_sequence': '-'.join(
                 [str(start_house + i) for i in finger_sequence]
             ),
